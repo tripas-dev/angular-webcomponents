@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-webcomponent';
+  myTitle = 'angular-webcomponent';
+  open = false;
+
+  toggle(event) {
+    console.log(event);
+    this.open = event.detail;
+  }
 }
