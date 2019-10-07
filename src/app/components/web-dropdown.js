@@ -13,7 +13,7 @@ template.innerHTML = `
   </div>
 `;
 
-export class XDropdown extends HTMLElement {
+export class WcDropdown extends HTMLElement {
   static get observedAttributes() {
     return ['title'];
   }
@@ -56,4 +56,4 @@ export class XDropdown extends HTMLElement {
   }
 }
 
-customElements.define('x-dropdown', XDropdown);
+customElements.define('wc-dropdown', WcDropdown);
